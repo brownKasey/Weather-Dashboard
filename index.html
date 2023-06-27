@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <!-- header ^_^ -->
+    <section class="hero is-small is-danger">
+        <div class="hero-body">
+          <p class="title">
+            Weather Dashboard
+          </p>
+        </div>
+    </section>
+
+    <!--content ;) -->
+    <section class=".container everything">
+
+    <section id="content" class=".container">
+
+     <!--search area -->
+            <section class="section city-search">
+                <h1 class="title">Search for a City</h1>
+                <input id="city-input"  class="input is-danger" type="text" placeholder="Search For City">
+                <button class="button is-danger is-light search-button">Search</button>
+                <hr></hr>
+                <h1 class="title prev-search">Previous Search</h1>
+                <a class="prev-result"> </a>
+                <button class="button is-danger is-light clear-button">Clear Previous Search</button>
+            </section>
+
+    <!--weather info -->
+            <section class=".container weather-info">
+
+    <!--current forecast-->
+                <section class="box weather-report">
+                    <h1 class="title"><span class="city-name">City Name + Date</span></h1>
+                        <h2 class="subtitle">
+                            Temp: <span class="temp"></span>
+                        </h2>
+                        <h2 class="subtitle">
+                            Wind: <span class="wind"></span>
+                        </h2>
+                        <h2 class="subtitle">
+                            Humidity: <span class="humidity"></span>
+                        </h2>
+
+                </section>
+
+    <!--5 day forecast-->
+                <h1 class="title">5-Day Forecast</h1>
+                <div class="forecast-container">
+                    <section class="forecast first">
+                        <div class="card">
+                            <div class="card-content">
+                              <div class="content">
+                                <h1 class="subtitle"><span class="date">Date</span></h1>
+                                <h2 class="subtitle">
+                                    Temp: <span class="temp-card"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Wind: <span class="wind-card"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Humidity: <span class="humidity-card"></span>
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="forecast second">
+                        <div class="card">
+                            <div class="card-content">
+                              <div class="content">
+                                <h1 class="subtitle"><span class="date2">Date</span></h1>
+                                <h2 class="subtitle">
+                                    Temp: <span class="temp-card2"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Wind: <span class="wind-card2"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Humidity: <span class="humidity-card2"></span>
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="forecast third">
+                        <div class="card">
+                            <div class="card-content">
+                              <div class="content">
+                                <h1 class="subtitle"><span class="date3">Date</span></h1>
+                                <h2 class="subtitle">
+                                    Temp: <span class="temp-card3"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Wind: <span class="wind-card3"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Humidity: <span class="humidity-card3"></span>
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="forecast fourth">
+                        <div class="card">
+                            <div class="card-content">
+                              <div class="content">
+                                <h1 class="subtitle"><span class="date4">Date</span></h1>
+                                <h2 class="subtitle">
+                                    Temp: <span class="temp-card4"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Wind: <span class="wind-card4"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Humidity: <span class="humidity-card4"></span>
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="forecast fifth">
+                        <div class="card">
+                            <div class="card-content">
+                              <div class="content">
+                                <h1 class="subtitle"><span class="date5">Date</span></h1>
+                                <h2 class="subtitle">
+                                    Temp: <span class="temp-card5"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Wind: <span class="wind-card5"></span>
+                                </h2>
+                                <h2 class="subtitle">
+                                    Humidity: <span class="humidity-card5"></span>
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                    </section>
+                </div>
+
+            </section>
+
+
+    </section>
+    <script src="./assets/javascript/script.js"></script>
+</body>
+
+</html>
