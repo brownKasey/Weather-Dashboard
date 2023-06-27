@@ -53,8 +53,8 @@ let getCityCoor = () =>{
     .then(function (data){
         let latitude = data.coord.lat;
         let longitude = data.coord.lon;
-        console.log(latitude);
-        console.log(longitude);
+        //console.log(latitude);
+        //console.log(longitude);
         getWeatherData(latitude, longitude);
 
     })
